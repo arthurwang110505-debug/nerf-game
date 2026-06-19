@@ -1,0 +1,10 @@
+{
+  "name": "Remix: NERF Tactical Command System",
+  "description": "A real-time military sci-fi battle hub for NERF survival games. Features an immersive sci-fi 16:9 Screen Console view and a mobile-friendly Player view with live QR scanning, Web Speech API briefings, and custom synthesizer soundscapes.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

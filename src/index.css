@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .animate-heartbeat {
+    animation: heartbeat 1.3s ease-in-out infinite;
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+}
+
+@keyframes heartbeat {
+  0%, 100% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.15);
+  }
+  40% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97) translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* Customize html5-qrcode styled elements to match military scifi aesthetic */
+#camera-reader-element button {
+  background-color: #0e7490 !important;
+  color: #000000 !important;
+  font-weight: bold !important;
+  font-family: inherit !important;
+  font-size: 11px !important;
+  padding: 6px 12px !important;
+  border-radius: 4px !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: all 0.2s !important;
+}
+
+#camera-reader-element button:hover {
+  background-color: #06b6d4 !important;
+}
+
+#camera-reader-element select {
+  background-color: #020617 !important;
+  color: #cfd8dc !important;
+  border: 1px solid #1e293b !important;
+  border-radius: 4px !important;
+  padding: 4px !important;
+  font-size: 11px !important;
+}
+
+#camera-reader-element__dashboard_section_swaplink {
+  color: #06b6d4 !important;
+  font-size: 10px !important;
+  text-decoration: underline !important;
+}
